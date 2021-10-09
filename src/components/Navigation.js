@@ -92,12 +92,13 @@ function Navigation() {
 						<Nav.Link>İletişim</Nav.Link>
 					</LinkContainer>
 					{currentUser ?
-						<LinkContainer to="/member/home">
+						// <LinkContainer to="/member/home">
+						<LinkContainer to="/member/profile">
 							<Button variant="outline-primary">Üye Sistemi</Button>
 						</LinkContainer>
 					:
 					<LinkContainer to="/member/login">
-						<Button variant="outline-primary">Giriş Yap</Button>
+						<Button variant="outline-primary">Kayıt / Giriş</Button>
 					</LinkContainer>}
 				</Nav>
 				</Navbar.Collapse>
