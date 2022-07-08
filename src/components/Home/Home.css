@@ -83,6 +83,7 @@ height: 32rem;
 
 .homeheader{
 	text-align: center;
+	margin-top: 150px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
@@ -109,12 +110,12 @@ section#counter-stats {
 }
 
 .stats .countUpIcon {
-	color: #1b1b2f;
+	color: #fff;
 	font-size: 60px;
 }
 
 .stats .countUpNumber {
-	color: #1b1b2f;
+	color: #ffffff;
 	font-size: 35px;
 	font-family: "ProximaNovaBold";
 }
@@ -151,3 +152,41 @@ section#counter-stats {
 }
 
 /* https://bootsnipp.com/snippets/eoXRa */
+
+
+.video-wrapper {
+	padding: 0;
+	margin: 0;
+}
+
+video {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+
+  }
+
+  .homeheader h1 {
+	background-color: #1f4068;
+	padding: 5px;
+	color: white;
+	opacity: 95%;
+	border-radius: 20px;
+  }
+
+.col-lg-3 {
+	margin-top: 0;
+	margin: auto;
+
+	background-color: #1f4068;
+	opacity: 95%;
+	border-radius: 30px;
+	padding-top: 10px;
+	border: 1px groove #fff;
+	color: #fff;
+}
+
+

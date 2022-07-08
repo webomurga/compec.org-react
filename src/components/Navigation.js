@@ -39,10 +39,13 @@ function Navigation() {
 
 				<Nav className="mr-auto" /*variant="pills"*/></Nav>
 				<Nav>
+					<div className='nav-container'>
 					<NavDropdown title="Biz Kimiz?" id="collasible-nav-dropdown">
+						
 						<LinkContainer to="/hakkimizda">
 							<NavDropdown.Item>Hakkımızda</NavDropdown.Item>
 						</LinkContainer>
+		
 
 						<LinkContainer to="/altkurullar">
 							<NavDropdown.Item>Alt Kurullarımız</NavDropdown.Item>
@@ -52,7 +55,8 @@ function Navigation() {
 							<NavDropdown.Item>Yönetim Ekibimiz</NavDropdown.Item>
 						</LinkContainer>
 					</NavDropdown>
-
+					</div>
+					<div className='nav-container'>
 					<NavDropdown title="Etkinliklerimiz" id="collasible-nav-dropdown" margin={100}>
 						<LinkContainer to="/bbo">
 							<NavDropdown.Item>Boğaziçi Bilişim Ödülleri</NavDropdown.Item>
@@ -79,18 +83,22 @@ function Navigation() {
 						</LinkContainer>
 
 					</NavDropdown>
-
+					</div>
+					<div className='nav-container'>
 					<LinkContainer to="/galeri">
 						<Nav.Link>Galeri</Nav.Link>
 					</LinkContainer>
-					
+					</div>
+					<div className='nav-container'>
 					<LinkContainer to="/blog">
 						<Nav.Link>Blog</Nav.Link>
 					</LinkContainer>
-					
+					</div>
+					<div className='nav-container'>
 					<LinkContainer to="/iletisim">
 						<Nav.Link>İletişim</Nav.Link>
 					</LinkContainer>
+					</div>
 					{currentUser ?
 						// <LinkContainer to="/member/home">
 						<LinkContainer to="/member/profile">

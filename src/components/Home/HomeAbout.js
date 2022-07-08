@@ -6,6 +6,11 @@ import {HomeResources} from "./HomeResources"
 function HomeAbout() {
 	return (
 		<div className="HomeAbout">
+			<div className='video-wrapper'>
+				<video className='videoTag' autoPlay loop muted>
+					<source src={HomeResources.Videos[0].vidsrc} />
+				</video>
+			</div>
 			<div class="container">
 				<div class="row featurette">
 					<div className="col">
@@ -21,34 +26,34 @@ function HomeAbout() {
 				<section id="counter-stats" class="wow fadeInRight" data-wow-duration="1.4s">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-3 stats">
+							<div className="col-lg-3 stats">
 								<i class="fa fa-user countUpIcon" aria-hidden="true"></i>
 								<div className="countUpNumber">
-									<CountUp end={5000} duration={4} suffix={"+"} />
+									<CountUp end={5000} duration={8} suffix={"+"} />
 								</div>
 								<h5 className="countUpText">Katılımcı</h5>
 							</div>
 
-							<div class="col-lg-3 stats">
+							<div className="col-lg-3 stats">
 								<i class="fa fa-calendar countUpIcon" aria-hidden="true"></i>
 								<div className="countUpNumber">
-									<CountUp end={54} duration={4} suffix={"+"} />
+									<CountUp end={54} duration={8} suffix={"+"} />
 								</div>
 								<h5 className="countUpText">Etkinlik</h5>
 							</div>
 
-							<div class="col-lg-3 stats">
+							<div className="col-lg-3 stats">
 								<i class="fa fa-envelope-o countUpIcon" aria-hidden="true"></i>
 								<div className="countUpNumber">
-									<CountUp end={13000} duration={4} suffix={"+"} />
+									<CountUp end={13000} duration={8} suffix={"+"} />
 								</div>
 								<h5 className="countUpText">Kişilik İletişim Ağı</h5>
 							</div>
 
-							<div class="col-lg-3 stats">
+							<div className="col-lg-3 stats">
 								<i class="fa fa-rocket countUpIcon" aria-hidden="true"></i>
 								<div className="countUpNumber">
-									<CountUp end={1200} duration={4} suffix={"+"} />
+									<CountUp end={1200} duration={8} suffix={"+"} />
 								</div>
 								<h5 className="countUpText">Yeni Üye</h5>
 							</div>
@@ -56,7 +61,7 @@ function HomeAbout() {
 					</div>
 				</section>
 				<hr />
-				<h1 style={{ textAlign: "center", marginBottom: "50px", marginTop: "50px" }}>Misyonumuz</h1>
+				<h1 style={{ textAlign: "center", marginBottom: "50px", marginTop: "600px" }}>Misyonumuz</h1>
 				{
 					HomeResources.Missions.map(
 						(mission, index) => (

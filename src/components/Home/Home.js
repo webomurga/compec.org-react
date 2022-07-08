@@ -11,7 +11,6 @@ function Home() {
 				<meta name="description"
 				content="Boğaziçi Üniversitesi Bilişim Kulübü, üyelerini yazılım, tasarım ve girişimcilik alanında geliştirirken, teknolojiye ve bilişime yön verecek işlere imza atıyor." />
 			</Helmet>
-			<HomeCarousel />
 			<HomeAbout />
 		</div>
 	)
